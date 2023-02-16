@@ -1,0 +1,5 @@
+{
+  "ProjectOverviewURL": "https://hana-cloud-tkgpjbk5.launchpad.cfapps.eu20.hana.ondemand.com/lcapppm_poc.ppm_pocLaunchpad-1.0.0",
+  "DeployedUTCTime": "2023-02-16T09:12:28.201Z",
+  "ApplicationLogURL": "https://logs.cf.eu20-001.hana.ondemand.com/app/dashboards#/view/Overview?_g=(filters:!((query:(match_phrase:(component_name:ppm_poc-srv)))))"
+}
