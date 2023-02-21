@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+        <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+        <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="ppm_pocService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <EntityContainer Name="EntityContainer">
+                <EntitySet Name="ItemsSet" EntityType="ppm_pocService.ItemsSet"/>
+            </EntityContainer>
+            <EntityType Name="ItemsSet">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" MaxLength="24" Nullable="false"/>
+                <Property Name="ProjectDescription" Type="Edm.String" MaxLength="40" Nullable="false"/>
+                <Property Name="ProjectManager" Type="Edm.String" MaxLength="50" Nullable="false"/>
+                <Property Name="LongDescription" Type="Edm.String" Nullable="false"/>
+                <Property Name="P1StartDate" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="P1FinishDate" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="P2StartDate" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="P2FinishDate" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="P3StartDate" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="P3FinishDate" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="Opex" Type="Edm.Decimal" Scale="2" Precision="17" Nullable="false"/>
+                <Property Name="Capex" Type="Edm.Decimal" Scale="2" Precision="17" Nullable="false"/>
+                <Property Name="BudgetIncrease" Type="Edm.Decimal" Scale="2" Precision="17" Nullable="false"/>
+                <Property Name="SalesPrice" Type="Edm.Decimal" Scale="2" Precision="17" Nullable="false"/>
+                <Property Name="PlannedTiming" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="CompetitorSalesPrice" Type="Edm.Decimal" Scale="2" Precision="17" Nullable="false"/>
+                <Property Name="P1OnTime" Type="Edm.String" MaxLength="1" Nullable="false"/>
+                <Property Name="P2OnTime" Type="Edm.String" MaxLength="1" Nullable="false"/>
+                <Property Name="P3OnTime" Type="Edm.String" MaxLength="1" Nullable="false"/>
+                <Property Name="P1OnBudget" Type="Edm.String" MaxLength="1" Nullable="false"/>
+                <Property Name="P2OnBudget" Type="Edm.String" MaxLength="1" Nullable="false"/>
+                <Property Name="P3OnBudget" Type="Edm.String" MaxLength="1" Nullable="false"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
