@@ -1,20 +1,7 @@
 {
-  "scopes": [    {
-    "name": "$XSAPPNAME.admin",
-    "description": "admin",
-    "grant-as-authority-to-apps": [
-      "$XSAPPNAME(application, xsappforclientapp)"
-    ]
-  }],
+  "scopes": [],
   "attributes": [],
-  "role-templates": [{
-    "name": "admin",
-    "description": "generated",
-    "scope-references": [
-      "$XSAPPNAME.admin"
-    ],
-    "attribute-references": []
-  }],
+  "role-templates": [],
   "xsappname": "ppm_poc",
   "tenant-mode": "dedicated"
 }

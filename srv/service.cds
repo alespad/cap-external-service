@@ -11,7 +11,3 @@ service ppm_pocService
         projection on ZWEB_PPM_SRV.ItemsSet;
 }
 
-annotate ppm_pocService with @requires :
-[
-    'authenticated-user'
-];
